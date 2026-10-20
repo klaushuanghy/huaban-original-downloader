@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "花瓣原图下载器",
+  "description": "整板原图下载、暂停继续、逐张校验；与本地下载引擎配合使用。",
+  "version": "1.1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtYgkEn+AYQqUOOY8iXNwvwRCHDa74DYlYzYdrYeOHd5IxwQxMwpGMLTb+ADepR4qkQwDwlEUXTEhpCp4z5jxv4DKB0Q1MAp30jlnrsBoJJ4zQopWSTblbZzw5iDBLL5W9vL4X84iF/y3YkhV88DJnXBu7XPcxKg/Sp1l94DUA3DKq4EvDAvenF8LSnw2BmmBIYSw3TZ+8IKnUyAn9ULoSvEs+UL0hkBx6oirXFgsyGnf0ZynTg8Qq1uNPYZcUJWp9zcOA2ET5tQR0czzqjY3dGXgy4B9JrOL5GQUyLmJQMxdOj6Vgl4w0Mo3uNkdyKaAvS/UC6XjR6wJIquSGBQzHQIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://huaban.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "下载当前花瓣画板的原图"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+.build/
+dist/
+runtime/
+state/
+Downloads/
+app/native-host.json
+*.exe
+*.zip
+*.part
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

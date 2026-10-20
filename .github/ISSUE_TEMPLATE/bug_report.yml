@@ -1,0 +1,30 @@
+name: 下载或运行问题
+description: 提供复现条件，帮助定位问题
+body:
+  - type: markdown
+    attributes:
+      value: 请勿粘贴Cookie、签名图片地址、账号密码、个人路径或完整任务文件。
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本
+      placeholder: 1.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows与浏览器版本
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 操作步骤与实际提示
+      description: 写明在读取清单、连接引擎、下载、核验、改名还是打包阶段发生。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果

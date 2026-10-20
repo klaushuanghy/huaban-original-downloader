@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>花瓣原图下载器</title><link rel="stylesheet" href="manager.css"></head>
+<body>
+<main>
+ <header><div class="identity"><img src="icon48.png" width="36" height="36" alt=""><h1>花瓣原图下载器</h1></div><span id="connection" role="status">正在连接本地引擎</span></header>
+ <section class="new-task" aria-labelledby="new-title"><h2 id="new-title">下载一个画板</h2><p class="intro">读取完整采集清单，保存原图，并逐张核对尺寸和完整性。</p>
+ <form id="form"><label for="board">花瓣画板链接</label><div class="input-row"><input id="board" type="text" inputmode="url" autocomplete="off" placeholder="https://huaban.com/boards/…" required><button id="start" type="submit">读取并下载</button></div></form>
+ <div class="folder-row"><div><span class="field-label">保存位置</span><p id="folder">等待本地引擎连接</p></div><button id="choose" type="button" class="secondary">更改文件夹</button></div>
+ <p class="help">先在浏览器登录花瓣。下载开始后，可以关闭此页面；再次打开即可查看或继续任务。</p>
+ </section>
+ <div id="notice" class="notice" role="status" hidden></div>
+ <section class="tasks" aria-labelledby="tasks-title"><div class="section-heading"><h2 id="tasks-title">下载任务</h2><button id="refresh" type="button" class="text-button">刷新状态</button></div><div id="jobs"><div class="empty"><h3>还没有下载任务</h3><p>粘贴画板链接后开始。重复下载同一画板时，会核验并跳过已完成的图片。</p></div></div></section>
+ <footer><span>原始文件直接保存，不放大、不重新压缩。</span><a href="help.html" target="_blank" rel="noopener">安装与使用说明</a></footer>
+</main><script src="manager.js"></script></body></html>

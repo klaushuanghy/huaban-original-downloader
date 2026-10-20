@@ -1,0 +1,17 @@
+{
+  "version": "1.1.0",
+  "nativeHost": "com.huaban.original_downloader",
+  "requestIntervalMs": 1800,
+  "concurrency": 2,
+  "cooldownMs": 90000,
+  "maxRateLimitRetries": 4,
+  "requestTimeoutSeconds": 120,
+  "hostRewrites": {
+    "gd-hbimg-edge.huaban.com": "gd-hbimg-edge.huabanimg.com"
+  },
+  "imageHostSuffixes": [
+    "huaban.com",
+    "huabanimg.com"
+  ],
+  "defaultUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+}
